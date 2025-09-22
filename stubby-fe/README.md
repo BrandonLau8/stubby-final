@@ -1,4 +1,4 @@
-# StoryFlow Frontend
+# CineMap Frontend
 
 This is the React TypeScript frontend for StoryFlow - an AI-Assisted Script & Game Narrative Builder.
 
