@@ -29,10 +29,10 @@ const Sidebar: React.FC<SidebarProps> = ({
     const defaultApiBase = typeof window !== 'undefined' && window.location.port === '3000'
         ? 'http://127.0.0.1:8000'
         : '';
-    const apiBaseUrl = (process.env.REACT_APP_API_BASE_URL ?? defaultApiBase).replace(/\/$/, '');
-    const audioTranscriptionUrl = apiBaseUrl
-        ? `${apiBaseUrl}/api/audio/transcribe/`
-        : '/api/audio/transcribe/';
+    // const apiBaseUrl = (process.env.REACT_APP_API_BASE_URL ?? defaultApiBase).replace(/\/$/, '');
+    // const audioTranscriptionUrl = apiBaseUrl
+    //     ? `${apiBaseUrl}/api/audio/transcribe/`
+    //     : '/api/audio/transcribe/';
 
 // With this updated configuration:
     const getApiBaseUrl = () => {
