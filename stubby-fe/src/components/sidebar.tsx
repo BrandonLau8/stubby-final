@@ -42,12 +42,12 @@ const Sidebar: React.FC<SidebarProps> = ({
         }
         
         // Development: if running on localhost:3000, point to local Django
-        if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+        if (typeof window !== 'undefined') {
             return 'http://127.0.0.1:8000'; // Updated to port 8000
         }
         
         // Production: point to your Django backend on Render
-        return 'http://127.0.0.1:8000'; // Replace with your actual Render URL
+        return 'https://stubby-final.onrender.com'; // Replace with your actual Render URL
     };
 
     const apiBaseUrl = getApiBaseUrl();
