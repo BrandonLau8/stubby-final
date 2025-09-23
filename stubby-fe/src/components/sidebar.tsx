@@ -33,6 +33,27 @@ const Sidebar: React.FC<SidebarProps> = ({
     const audioTranscriptionUrl = apiBaseUrl
         ? `${apiBaseUrl}/api/audio/transcribe/`
         : '/api/audio/transcribe/';
+
+// With this updated configuration:
+    const getApiBaseUrl = () => {
+        // Check if we have an environment variable for the API URL
+        if (process.env.REACT_APP_API_BASE_URL) {
+            return process.env.REACT_APP_API_BASE_URL.replace(/\/$/, '');
+        }
+        
+        // Development: if running on localhost:3000, point to local Django
+        if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+            return 'http://127.0.0.1:8001'; // Updated to port 8001
+        }
+        
+        // Production: point to your Django backend on Render
+        return 'https://your-django-app.onrender.com'; // Replace with your actual Render URL
+    };
+
+const apiBaseUrl = getApiBaseUrl();
+const audioTranscriptionUrl = `${apiBaseUrl}/api/audio/transcribe/`;
+    
+
     const navigate = useNavigate(); // Add this hook
     const [isRecording, setIsRecording] = useState(false);
     const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
