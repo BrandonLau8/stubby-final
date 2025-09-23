@@ -46,8 +46,16 @@ const Sidebar: React.FC<SidebarProps> = ({
             return 'http://127.0.0.1:8000'; // Updated to port 8000
         }
         
-        // Production: point to your Django backend on Render
-        return 'https://your-django-app.onrender.com'; // Replace with your actual Render URL
+        const isProduction = true; // or false depending on your setup
+        let API_URL;
+
+        if (isProduction) {
+        API_URL = 'https://your-django-app.onrender.com'; // Production URL
+        } else {
+        API_URL = 'http://127.0.0.1:8000'; // Local development URL
+        }
+
+        return API_URL;
     };
 
     const apiBaseUrl = getApiBaseUrl();
