@@ -47,7 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         }
         
         // Production: point to your Django backend on Render
-        return 'https://stubby-final.onrender.com'; // Replace with your actual Render URL
+        return 'http://54.91.61.247:8000'; // Replace with your actual Render URL
     };
 
     const apiBaseUrl = getApiBaseUrl();

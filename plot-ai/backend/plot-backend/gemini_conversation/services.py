@@ -100,7 +100,7 @@ class GeminiService:
 
 class WhisperService:
     def __init__(self):
-        self.model = whisper.load_model("tiny") # change from turbo to tiny
+        self.model = whisper.load_model("tiny")
 
     def transcribe_audio(self, audio_file_path):
         """Transcribe audio file to text"""
