@@ -3,7 +3,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 from main import get_gemini_audio_response
 
-model = whisper.load_model("turbo")
+model = whisper.load_model("tiny")
 
 
 def transcribe(audio_filepath): 

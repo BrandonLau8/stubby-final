@@ -32,7 +32,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 # Optional whisper import for audio transcription
 try:
     import whisper
-    WHISPER_MODEL = whisper.load_model("turbo")
+    WHISPER_MODEL = whisper.load_model("tiny")
 except ImportError:
     logger.warning("Whisper not installed - audio transcription will be unavailable")
     WHISPER_MODEL = None
