@@ -50,8 +50,8 @@ const Sidebar: React.FC<SidebarProps> = ({
         return 'https://your-django-app.onrender.com'; // Replace with your actual Render URL
     };
 
-const apiBaseUrl = getApiBaseUrl();
-const audioTranscriptionUrl = `${apiBaseUrl}/api/audio/transcribe/`;
+    const apiBaseUrl = getApiBaseUrl();
+    const audioTranscriptionUrl = `${apiBaseUrl}/api/audio/transcribe/`;
     
 
     const navigate = useNavigate(); // Add this hook
