@@ -26,7 +26,6 @@ IN PROGRESS
   <img width="1455" height="700" alt="Screenshot 2025-09-22 at 1 07 20 PM" src="https://github.com/user-attachments/assets/4e325980-db32-47e3-b523-e939a4f1625e" />
   <img width="1465" height="729" alt="Screenshot 2025-09-22 at 1 07 30 PM" src="https://github.com/user-attachments/assets/4a037e9e-886a-49fb-a494-3e123177a683" />
   <img width="1920" height="1036" alt="cinemap_demo" src="https://github.com/user-attachments/assets/af904012-4276-4e97-ad2a-f888d8d49a1c" />
-  [![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch%20Video-red?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=bbGHvCMCIn0)
 
 
  
